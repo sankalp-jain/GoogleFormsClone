@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User</title>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+	<script src="initialize.js"></script>
+	<script src="formFill.js"></script>
+</head>
+<body>
+	<p id="prog"></p>	
+	<p>Enter the email id of owner</p>
+	<input id="email" type="text" name="">
+	<p>Enter the form name</p>
+	<input id="nameForm" type="text" name="">
+	<button onclick="fillForm(document.getElementById('email').value,document.getElementById('nameForm').value);">Fill the form</button>
+
+	<p id="que1"></p>
+	<p id="ans1"></p>
+	<p id="que2"></p>
+	<p id="ans2"></p>
+	<p id="que3"></p>
+	<p id="ans3"></p>
+	<p id="que4"></p>
+	<p id="ans4"></p>
+	<p id="que5"></p>
+	<p id="ans5"></p>
+	<p id="que6"></p>
+	<p id="ans6"></p>
+	<p id="que7"></p>
+	<p id="ans7"></p>
+	<p id="que8"></p>
+	<p id="ans8"></p>
+	<p id="que9"></p>
+	<p id="ans9"></p>
+
+	<button onclick="submitForm(document.getElementById('email').value,document.getElementById('nameForm').value);">submit</button>
+</body>
+</html>

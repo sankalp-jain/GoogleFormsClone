@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script src="initialize.js"></script>
+<script src="apps.js"></script>
+
+</head>
+<body>
+	<p style="font-size: 35px;position: relative;left: 450px;top: 20px;">Replica of Google Form</p> 
+	<div id="bord" style="border: 1px solid black; height: 2000px; width: 700px; ">
+		<input type="text"  id="formName" name="" value="untitled form" size="35%" style="margin: 20px; font-size: 35px;" onclick="this.select();">
+		<input type="text" name="" value="form description" size="30%" style="margin-left: 20px; margin-bottom: 20px; margin-right: 20px; font-size: 25px; " id="desc" onclick="this.select();">
+		<br>
+		<p id="prog"></p>		
+		<br>
+		<button onclick="times();" style="margin: 25px;padding: 15px;width: 200px;background: white;">Add Question</button>
+		<div>
+			<input type="text" name="" value="Question" size="25%" style="border-left: none;border-top: none;border-right: none;margin-left: 20px;margin-bottom: 20px;margin-right: 20px;font-size: 25px;" id="que1" onclick="this.select();">
+			<select style="border-left: none;border-top: none;border-right: none;width: 200px;padding-left: 15px;" id="selectq1" onchange="changeField(this);">
+				<option></option>
+				<option>Long Text</option>
+				<option>Short Text</option>
+				<option>File Upload</option>
+			</select>
+		</div>
+		<p id="demo1"></p>
+		<p id="demoa1"></p>
+		<p id="demo2"></p>
+		<p id="demoa2"></p>
+		<p id="demo3"></p>
+		<p id="demoa3"></p>
+		<p id="demo4"></p>
+		<p id="demoa4"></p>
+		<p id="demo5"></p>
+		<p id="demoa5"></p>
+		<p id="demo6"></p>
+		<p id="demoa6"></p>
+		<p id="demo7"></p>
+		<p id="demoa7"></p>
+		<p id="demo8"></p>
+		<p id="demoa8"></p>
+		<p id="demo9"></p>
+		<p id="demoa9"></p>
+		<button onclick="getAnswers();" style="margin-left: 250px;width: 150px;font-size: 25px;background-color: white;" >Submit</button>
+
+	</div>
+
+</div>
+<script src="app.js"></script>
+
+</body>
+</html>
